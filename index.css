@@ -1,0 +1,65 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+#navbar {
+  background-color: "";
+}
+
+#navbar.scrolled {
+  transition: background-color 0.3s;
+}
+
+#home,
+#about,
+#services {
+  margin: 5rem;
+}
+#home,
+#about,
+#services h1 {
+  text-align: center;
+}
